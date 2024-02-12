@@ -1,0 +1,22 @@
+{
+  "name": "cc.xyzroe.zigusb",
+  "version": "1.0.0",
+  "main": "app.js",
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "scripts": {
+    "lint": "eslint --ext .js,.ts --ignore-path .gitignore ."
+  },
+  "devDependencies": {
+    "@tsconfig/node16": "^16.1.1",
+    "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.5",
+    "@types/node": "^20.11.17",
+    "eslint": "^7.32.0",
+    "eslint-config-athom": "^3.1.3"
+  },
+  "dependencies": {
+    "homey-zigbeedriver": "^2.1.4",
+    "zigbee-clusters": "^2.4.0"
+  }
+}

@@ -1,0 +1,106 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "cc.xyzroe.zigusb",
+  "version": "1.0.0",
+  "compatibility": ">=5.0.0",
+  "sdk": 3,
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "ZigUSB"
+  },
+  "description": {
+    "en": "Adds support for ZigUSB devices."
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Arun Neelicattu",
+    "email": "arun.neelicattu@gmail.com"
+  },
+  "drivers": [
+    {
+      "name": {
+        "en": "ZigUSB"
+      },
+      "class": "socket",
+      "capabilities": [
+        "onoff",
+        "measure_temperature",
+        "measure_current",
+        "measure_voltage",
+        "measure_power",
+        "measure_uptime"
+      ],
+      "platforms": [
+        "local"
+      ],
+      "connectivity": [
+        "zigbee"
+      ],
+      "images": {
+        "small": "/drivers/zigusb/assets/images/small.png",
+        "large": "/drivers/zigusb/assets/images/large.png",
+        "xlarge": "/drivers/zigusb/assets/images/xlarge.png"
+      },
+      "zigbee": {
+        "manufacturerName": "xyzroe.cc",
+        "productId": [
+          "ZigUSB"
+        ],
+        "endpoints": {
+          "1": {
+            "clusters": [
+              0,
+              7,
+              6
+            ],
+            "bindings": [
+              0,
+              6
+            ]
+          },
+          "2": {
+            "clusters": [
+              12
+            ],
+            "bindings": []
+          },
+          "4": {
+            "clusters": [
+              1026
+            ],
+            "bindings": []
+          },
+          "5": {
+            "clusters": [
+              12
+            ],
+            "bindings": []
+          }
+        }
+      },
+      "id": "zigusb"
+    }
+  ],
+  "capabilities": {
+    "measure_uptime": {
+      "type": "string",
+      "title": {
+        "en": "Uptime"
+      },
+      "uiComponent": "sensor",
+      "getable": true,
+      "setable": false,
+      "icon": "/assets/icon-uptime.svg"
+    }
+  }
+}
