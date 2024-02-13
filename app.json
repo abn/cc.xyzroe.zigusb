@@ -11,11 +11,12 @@
     "en": "ZigUSB"
   },
   "description": {
-    "en": "Adds support for ZigUSB devices."
+    "en": "Make your usb devices smart."
   },
   "category": [
     "tools"
   ],
+  "brandColor": "#159957",
   "permissions": [],
   "images": {
     "small": "/assets/images/small.png",
@@ -26,6 +27,12 @@
     "name": "Arun Neelicattu",
     "email": "arun.neelicattu@gmail.com"
   },
+  "homepage": "https://xyzroe.cc/ZigUSB/",
+  "source": "https://github.com/abn/cc.xyzroe.zigusb",
+  "bugs": {
+    "url": "https://github.com/abn/cc.xyzroe.zigusb/issues"
+  },
+  "support": "https://github.com/abn/cc.xyzroe.zigusb/issues",
   "drivers": [
     {
       "name": {
