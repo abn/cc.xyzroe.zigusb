@@ -1,0 +1,19 @@
+[
+  {
+    "type": "group",
+    "label": { "en": "Connected Device Configuration" },
+    "children": [
+      {
+        "id": "restart_delay",
+        "type": "number",
+        "label": { "en": "Restart Delay" },
+        "value": 5,
+        "hint": { "en": "Seconds to wait before turning device back on when restarting." },
+        "units": { "en": "seconds" },
+        "min": 1,
+        "max": 60,
+        "step": 1
+      }
+    ]
+  }
+]

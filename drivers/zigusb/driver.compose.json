@@ -9,8 +9,14 @@
     "measure_current",
     "measure_voltage",
     "measure_power",
-    "measure_uptime"
+    "measure_uptime",
+    "button.restart"
   ],
+  "capabilitiesOptions": {
+    "button.restart": {
+      "title": { "en": "Restart" }
+    }
+  },
   "platforms": [
     "local"
   ],

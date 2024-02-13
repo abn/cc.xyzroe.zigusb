@@ -173,6 +173,16 @@ class ZigUSBDevice extends ZigBeeDevice {
         await this.setCapabilityValue('onoff', !result['onOff']);
       })
       .catch(this.error);
+
+    // register delayed restart button
+    this.registerCapabilityListener('button.restart', async () => {
+      await onOffCluster.onWithTimedOff({
+        onOffControl: 0,
+        onTime: this.getSetting('restart_delay') * 10,
+        offWaitTime: 0,
+      })
+        .catch(this.error);
+    });
   }
 
   async registerMeasureTemperature() {

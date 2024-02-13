@@ -38,8 +38,16 @@
         "measure_current",
         "measure_voltage",
         "measure_power",
-        "measure_uptime"
+        "measure_uptime",
+        "button.restart"
       ],
+      "capabilitiesOptions": {
+        "button.restart": {
+          "title": {
+            "en": "Restart"
+          }
+        }
+      },
       "platforms": [
         "local"
       ],
@@ -56,6 +64,11 @@
         "productId": [
           "ZigUSB"
         ],
+        "learnmode": {
+          "instruction": {
+            "en": "To enter pairing mode; power on (plug into power source), wait 2 seconds (LED should long blink once), power off (remove from power source), repeat this cycle three times. On the fourth time, LED should start blinking."
+          }
+        },
         "endpoints": {
           "1": {
             "clusters": [
@@ -88,7 +101,34 @@
           }
         }
       },
-      "id": "zigusb"
+      "id": "zigusb",
+      "settings": [
+        {
+          "type": "group",
+          "label": {
+            "en": "Connected Device Configuration"
+          },
+          "children": [
+            {
+              "id": "restart_delay",
+              "type": "number",
+              "label": {
+                "en": "Restart Delay"
+              },
+              "value": 5,
+              "hint": {
+                "en": "Seconds to wait before turning device back on when restarting."
+              },
+              "units": {
+                "en": "seconds"
+              },
+              "min": 1,
+              "max": 60,
+              "step": 1
+            }
+          ]
+        }
+      ]
     }
   ],
   "capabilities": {
