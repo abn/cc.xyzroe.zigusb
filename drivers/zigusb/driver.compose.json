@@ -27,6 +27,11 @@
     "productId": [
       "ZigUSB"
     ],
+    "learnmode": {
+      "instruction": {
+        "en": "To enter pairing mode; power on (plug into power source), wait 2 seconds (LED should long blink once), power off (remove from power source), repeat this cycle three times. On the fourth time, LED should start blinking."
+      }
+    },
     "endpoints": {
       "1": {
         "clusters": [
