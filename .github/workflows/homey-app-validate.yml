@@ -1,0 +1,30 @@
+name: Validate Homey App
+on:
+  workflow_dispatch:
+    inputs:
+      level:
+        type: choice
+        description: Validation Level
+        required: true
+        default: debug
+        options:
+          - debug
+          - publish
+          - verified
+  push:
+    branches:
+      - main
+  pull_request:
+
+jobs:
+  main:
+    name: Validate Homey App
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: abn/github-action-homey-app/setup@main
+
+      - uses: abn/github-action-homey-app/validate@main
+        with:
+          level: "verified"
