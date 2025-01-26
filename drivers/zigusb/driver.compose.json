@@ -17,12 +17,8 @@
       "title": { "en": "Restart" }
     }
   },
-  "platforms": [
-    "local"
-  ],
-  "connectivity": [
-    "zigbee"
-  ],
+  "platforms": ["local"],
+  "connectivity": ["zigbee"],
   "images": {
     "small": "{{driverAssetsPath}}/images/small.png",
     "large": "{{driverAssetsPath}}/images/large.png",
@@ -30,9 +26,7 @@
   },
   "zigbee": {
     "manufacturerName": "xyzroe.cc",
-    "productId": [
-      "ZigUSB"
-    ],
+    "productId": ["ZigUSB"],
     "learnmode": {
       "instruction": {
         "en": "To enter pairing mode; power on (plug into power source), wait 2 seconds (LED should long blink once), power off (remove from power source), repeat this cycle three times. On the fourth time, LED should start blinking."
@@ -40,32 +34,19 @@
     },
     "endpoints": {
       "1": {
-        "clusters": [
-          0,
-          7,
-          6
-        ],
-        "bindings": [
-          0,
-          6
-        ]
+        "clusters": [0, 7, 6],
+        "bindings": [0, 6]
       },
       "2": {
-        "clusters": [
-          12
-        ],
+        "clusters": [12],
         "bindings": []
       },
       "4": {
-        "clusters": [
-          1026
-        ],
+        "clusters": [1026],
         "bindings": []
       },
       "5": {
-        "clusters": [
-          12
-        ],
+        "clusters": [12],
         "bindings": []
       }
     }

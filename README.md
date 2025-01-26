@@ -10,9 +10,10 @@ The following features are supported:
 4. Electrical Metering: voltage.
 5. Electrical Metering: power.
 
-Note: The app has been extensively tested with the touch variant, but should work seamlessly with the latest button 
-versions as well. 
+Note: The app has been extensively tested with the touch variant, but should work seamlessly with the latest button
+versions as well.
 
 ## Acknowledgements
-The ZigUSB hardware device is developed by [xyzroe](https://github.com/xyzroe). Firmware, overview, schematics etc. can 
+
+The ZigUSB hardware device is developed by [xyzroe](https://github.com/xyzroe). Firmware, overview, schematics etc. can
 be viewed [here](https://github.com/xyzroe/ZigUSB).
